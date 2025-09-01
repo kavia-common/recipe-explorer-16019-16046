@@ -8,6 +8,7 @@ import Profile from './pages/Profile';
 import Auth from './pages/Auth';
 import RecipeDetail from './pages/RecipeDetail';
 import NotFound from './pages/NotFound';
+import AuthCallback from './pages/AuthCallback';
 import './App.css';
 
 // Protected route wrapper component
@@ -45,6 +46,7 @@ function App() {
                 } 
               />
               <Route path="/recipe/:id" element={<RecipeDetail />} />
+              <Route path="/auth/callback" element={<AuthCallback />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
           </div>
