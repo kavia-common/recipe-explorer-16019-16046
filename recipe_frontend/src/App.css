@@ -1,0 +1,120 @@
+/* CSS Variables for Theme Management */
+:root {
+  /* Colors from design system */
+  --color-primary: #FF7043;
+  --color-secondary: #FFA726;
+  --color-accent: #66BB6A;
+  --color-white: #ffffff;
+  --color-black: #000000;
+  --color-gray-1: #484848;
+  --color-gray-2: #797979;
+  --color-gray-3: #a9a9a9;
+  --color-gray-4: #d9d9d9;
+  --color-warning: #ffad30;
+  --color-rating: #ffa61a;
+  
+  /* Typography */
+  --font-family: 'Poppins', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: var(--color-white);
+  color: var(--color-black);
+}
+
+.app-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Common Components */
+.btn {
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: none;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-primary {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+}
+
+.btn-primary:hover {
+  opacity: 0.9;
+}
+
+.btn-secondary {
+  background-color: var(--color-secondary);
+  color: var(--color-white);
+}
+
+.btn-secondary:hover {
+  opacity: 0.9;
+}
+
+/* Form Elements */
+.input-field {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid var(--color-gray-4);
+  border-radius: 8px;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.input-field:focus {
+  outline: none;
+  border-color: var(--color-primary);
+}
+
+/* Card Styles */
+.card {
+  background: var(--color-white);
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+/* Navigation */
+.nav-link {
+  color: var(--color-gray-2);
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.nav-link.active {
+  color: var(--color-primary);
+  background-color: rgba(255, 112, 67, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .app-container {
+    padding: 0 10px;
+  }
+  
+  .btn {
+    padding: 8px 16px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .app-container {
+    padding: 0 5px;
+  }
+}
